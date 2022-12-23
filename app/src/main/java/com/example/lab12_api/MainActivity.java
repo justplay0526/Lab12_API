@@ -19,18 +19,6 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity {
-    class Data{
-        Result result;
-
-        class Result{
-
-            Results[] results;
-            class Results{
-                String Station;
-                String Destination;
-            }
-        }
-    }
 
     private Button btn_query;
 
@@ -77,5 +65,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
         });
+    }
+}
+
+class Data{
+    Result result;
+
+    class Result{
+
+        Results[] results;
+        class Results{
+            String Station;
+            String Destination;
+        }
     }
 }
